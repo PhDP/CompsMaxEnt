@@ -39,7 +39,7 @@
       <div class="slides">
         <section>
           <h1>MaxEnt</h1>
-          <h3>...in ecology &amp; Evolution</h3>
+          <h3>...in ecology &amp; evolution</h3>
           <p>
             <small>by <a href="http://phdp.github.io/">Philippe Desjardins-Proulx</a></small>
           </p>
@@ -51,6 +51,8 @@
             <p>In a few words, MaxEnt attempts to find the distribution that represent an
             maximal state of ignorance. This is achieved by maximizing the information
             entropy of the distribution, subject to constraints.</p>
+
+            \[...\]
           </section>
           <section>
             <h2>MaxEnt in a nutshell</h2>
@@ -79,17 +81,6 @@
         </section>
 
         <section>
-          <h2>Alternatives to MaxEnt</h2>
-
-          <h3>Machine learning as a second order process</h3>
-
-          \[\mbox{human} \mapsto (m: x \mapsto y),\]
-
-          \[\mbox{human} \mapsto (a: x_0 \mapsto (m: x_1 \mapsto y)).\]
-
-        </section>
-
-        <section>
           <h2>METE</h2>
           <p>...</p>
         </section>
@@ -108,6 +99,45 @@
           <p><img src='img/xkcd_804.png' alt='xkcd 804'/></p>
 
           <p>&ldquo;No Free Lunch Theorem&rdquo; (Wolpert, 1997)</p>
+        </section>
+
+        <section>
+          <section>
+
+            <h2>Alternatives to MaxEnt</h2>
+
+            <h3>Machine learning as a second order process</h3>
+
+            \[\mbox{human} \mapsto (m: x \mapsto y),\]
+
+            \[\mbox{human} \mapsto (a: x_0 \mapsto (m: x_1 \mapsto y)).\]
+          </section>
+
+          <section>
+            <h2>Support Vector Machines</h2>
+
+            <p><img src='img/svm.png' alt='Support Vector Machines'/></p>
+
+            <p>1. Maximizing margins</p>
+          </section>
+
+          <section>
+            <h2>Gaussian Processes</h2>
+
+            <p><img src='img/gp.png' alt='Gaussian Processes'/></p>
+
+            <p>2. Bayesian form of SVMs (Murphy 2011), so it's better! Well no... Scales as \(\mathcal{O}(n^3)\) to the number of data points.</p>
+          </section>
+
+          <section>
+            <h2>Artificial Neural Networks</h2>
+
+            <p><img src='img/ann.png' alt='Artificial Neural Networks'/></p>
+
+            <p>3. Arguably the most effective branch of machine learning. Axioms, what's that?</p>
+            <p>4. Getting a good model requires the following: tweaking, sweat, blood, and luck.</p>
+          </section>
+
         </section>
 
         <section>
