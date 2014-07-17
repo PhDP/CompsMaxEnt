@@ -88,8 +88,37 @@
         </section>
 
         <section>
-          <h2>METE</h2>
-          <p>...</p>
+          <section>
+            <h2>METE: Predictions</h2>
+            <p>SAR: Species-area relationship</p>
+            <p>EAR: Endemics-area relationship</p>
+            <p>SAD: Species-abundance distribution</p>
+            <p>AER: Abundance-energy relationship</p>
+          </section>
+
+          <section>
+            <h2>METE's parameters</h2>
+            <p>Area of the ecosystem \(A_0\).</p>
+            <p>The number of individuals \(N_0\) in \(A_0\).</p>
+            <p>The summed metabolic energy rate of all individuals \(E_0\) in \(A_0\).</p>
+            <p>Number of species \(S_0\) in \(A_0\).</p>
+          </section>
+
+          <section>
+            <h2>MaxEnt in METE</h2>
+            <p>Two distributions</p>
+            <p>1: \(R(n, \varepsilon)\) is the joint distribution of species abundances \(n\) and energy demand \(\varepsilon\).</p>
+            <p>2: \(P_A^{j}(n)\) is the spatial abundance distribution defined as the probability of finding \(n\) individuals of species \(n\) within some subset \(A \subseteq A_0\).</p>
+            <p>Key point: these two distributions are enough to describe the SAD, SAR, AER, and EAR.</p>
+          </section>
+
+          <section>
+            <h2>Predictions</h2>
+            <p>\(SAD(n) = \frac{\exp(-\lambda_{1}n)}{n\ln(\lambda_{1}^{-1})},\)</p>
+            <p>\(AER(n) = \frac{\lambda_{1}\lambda_{2}\exp(-(\lambda_{1} + \lambda_{2}\varepsilon))}{\left(1 - \exp(-(\lambda_{1} + \lambda_{2}\varepsilon))\right)^2},\)</p>
+            <p>\(SAR(A) = S_{0}\sum_{n_{0} = 1}\left(1 - \frac{1}{\sum \exp(-\lambda n)}\right)SAD(n_{0}),\)</p>
+            <p>\(EAR(A) = S_{0}\sum_{n_0= 1}^{N_0} \frac{\exp(-\lambda_pn_0)}{\sum_{n=1}^{n_0}\exp(-\lambda_pn)}SAD(n_0).\)</p>
+          </section>
         </section>
 
         <section>
